@@ -401,6 +401,14 @@ hr {
   padding: 0px;
 }
 
+#main-navbar .navbar-nav{
+  width: auto;
+  margin-left: auto;
+}
+/* .navbar-brand img{
+  width: 10%
+} */
+
 .top-nav-collapse {
   background: #fff;
   z-index: 999999;
@@ -673,10 +681,6 @@ hr {
     background: #f8f9fa;
   }
 }
-#main-navbar .navbar-nav{
-  width: auto;
-  margin-left: auto;
-}
 
 /* ==========================================================================
 3. Hero Area
@@ -699,6 +703,14 @@ hr {
 #hero-area .contents .head-title {
   color: #585b60;
   font-size: 34px;
+  line-height: 48px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+#hero-area .contents .head-subtitle {
+  color: #585b60;
+  font-size: 24px;
   line-height: 48px;
   font-weight: 700;
   margin-bottom: 30px;

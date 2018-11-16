@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Arimo:400,700");
 html {
   overflow-x: hidden;
 }
@@ -7,7 +7,7 @@ body {
   background: #fff;
   font-size: 14px;
   font-weight: 400;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Arimo', sans-serif;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -23,7 +23,7 @@ h1, h2, h3, h4 {
   font-size: 38px;
   color: #585b60;
   font-weight: 700;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Arimo', sans-serif;
 }
 
 a {
@@ -43,7 +43,7 @@ a a:focus {
 
 p {
   font-weight: 400;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Arimo', sans-serif;
   margin: 0px;
   font-size: 14px;
 }
@@ -328,7 +328,7 @@ hr {
 
 .features-box .features-content h4 {
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 5px;
   transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
@@ -382,7 +382,7 @@ hr {
 
 .services-item .services-content h3 {
   margin-top: 10px;
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 10px;
 }
 
@@ -893,13 +893,13 @@ hr {
 
 #pricing .table .pricing-header .price-value sup {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
   top: -18px;
 }
 
 #pricing .table .pricing-header .price-value span {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 #pricing .table .description {
@@ -978,7 +978,7 @@ hr {
   margin: 0;
   clear: both;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 26px;
   margin-bottom: 10px;
 }

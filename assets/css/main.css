@@ -388,10 +388,10 @@ hr {
   margin-bottom: 10px;
 }
 
-.services-item .services-content h3 a {
+.services-item .services-content h3 {
   font-size: 15px;
   text-transform: uppercase;
-  color: #404040;
+  color: #202020;
 }
 
 .services-item .services-content h3 a:hover {
@@ -1152,7 +1152,7 @@ textarea {
   margin: 20px 0px;
   padding: 3px 55px;
   position: relative;
-  color: #abacae;
+  color: #404040;
 }
 
 .contact-right .single-contact p {
@@ -1160,7 +1160,7 @@ textarea {
 }
 
 .contact-right .single-contact p a {
-  color: #abacae;
+  color: #404040;
 }
 
 .contact-right .contact-icon {
@@ -1266,7 +1266,8 @@ textarea {
   margin:0 auto;
 }
 .foot p{
-  text-align: center
+  text-align: center;
+  color: #fff;
 }
 .footer-area {
   background: #34363a;

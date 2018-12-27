@@ -103,14 +103,14 @@ ul li, ol li {
 }
 
 .btn-common {
-  background-color: #3da1db;
+  background-color: #991862;
   position: relative;
   z-index: 1;
 }
 
 .btn-common:hover {
   color: #fff;
-  background-color: #4297e0;
+  background-color: #db238d;
   box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
   transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
@@ -218,7 +218,7 @@ a.back-to-top i {
   height: 40px;
   line-height: 40px;
   color: #fff;
-  background: #3da1db;
+  background: #991862;
   border-radius: 30px;
   text-align: center;
   transition: all 0.2s ease-in-out;

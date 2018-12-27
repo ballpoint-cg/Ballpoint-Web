@@ -297,7 +297,7 @@ hr {
 }
 
 #feature {
-  background: #f8f9fb;
+  background: #fff;
 }
 
 .text-wrapper {
@@ -369,6 +369,9 @@ hr {
   -webkit-filter: grayscale(0%);
 }
 
+#services{
+  background: #f8f9fb;
+}
 
 /* Services Item */
 .services-item {

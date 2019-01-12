@@ -342,7 +342,9 @@ hr {
 .features-box .features-content h4 {
   font-size: 15px;
   font-weight: 400;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  text-transform: uppercase;
   transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
@@ -366,14 +368,14 @@ hr {
   transition: all .6s ease;
   -moz-transition: all .6s ease;
   -webkit-transition: all .6s ease;
-  border-bottom: 2px ridge #202020;
+  border-bottom: 2px solid #202020;
 }
 
 .client-item-wrapper:hover a img {
   opacity: 1;
   filter: grayscale(0%);
   -webkit-filter: grayscale(0%);
-  border-bottom: 2px ridge white;
+  border-bottom: 2px solid #faf9e3;
 }
 
 #services{

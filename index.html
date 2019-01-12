@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123908964-2"></script>
+	<!-- Detect region from IP address and track if not from Europe -->
+	<script
+	 	src="https://code.jquery.com/jquery-3.3.1.min.js"
+	 	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	 	crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		$.getJSON('https://json.geoiplookup.io/api?callback=?', function(data) {
+			// console.log(JSON.stringify(data, null, 2));
+			$.getJSON('https://gpdr.geoiplookup.io/'+data.ip, function(d2){
+				// console.log(d2);
+				if(d2.gdpr !== "true"){
+					// console.log("tracking gtag");
+					window.dataLayer = window.dataLayer || [];
+					function gtag(){dataLayer.push(arguments);}
+					gtag('js', new Date());
+
+					gtag('config', 'UA-123908964-1');
+				}
+			});
+		});
+	</script>
+      
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Ballpoint Consulting</title>
+    <title>Ballpoint CG</title>
 
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
@@ -127,8 +151,8 @@
           <div class="row">
             <div class="col-md-12 col-sm-12">
               <div class="contents">
-                <h2 class="head-title wow fadeInUp">Ballpoint Consulting<br> </h2>
-                <h2 class="head-subtitle wow fadeInUp">Your business is modern.<br/> We make sure your image is too.</h2>
+                <h2 class="head-title wow fadeInUp">Ballpoint<br>Consulting Group<br> </h2>
+                <h2 class="head-subtitle wow fadeInUp">Write your next chapter with us.</h2>
 
                 <!-- <div class="header-button wow fadeInUp" data-wow-delay="0.3s"> -->
                   <!-- <a href="#" class="btn btn-common">Download Now</a> -->
@@ -689,7 +713,7 @@
                   <div class="contact-icon">
                     <i class="lni-envelope"></i>
                   </div>
-                  <p><a href="#">info@ballpointcg.com</a></p>
+                  <p><a href="mailto:info@ballpointcg.com">info@ballpointcg.com</a></p>
                 </div>
                 <div class="single-contact">
                   <div class="contact-icon">
@@ -761,7 +785,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <p>Copyright © 2018 Ballpoint Consulting, LLC. All Rights Reserved.  <a href="https://drive.google.com/open?id=1zOf0yJWbeItJRnY8yBVEULuPS4zPxtqt">Privacy Policy</a></p>
+            <p>Copyright © 2018 Ballpoint Consulting, LLC. All Rights Reserved.  <a href="https://drive.google.com/open?id=1zOf0yJWbeItJRnY8yBVEULuPS4zPxtqt" target="_blank">Privacy Policy</a></p>
           </div>
         </div>
       </div>

@@ -134,4 +134,36 @@
 
   });      
 
+  $.fn.serializeObject = function()
+{
+   var o = {};
+   var a = this.serializeArray();
+   $.each(a, function() {
+       if (o[this.name]) {
+           if (!o[this.name].push) {
+               o[this.name] = [o[this.name]];
+           }
+           o[this.name].push(this.value || '');
+       } else {
+           o[this.name] = this.value || '';
+       }
+   });
+   return o;
+};
+
+  var $form = $('form#contactForm'),
+    url = 'https://script.google.com/macros/s/AKfycby56Uq4TiV_5dc9gcuR0HEcEKi03W55am3K3ecJc16JXcsdJ3sH/exec'
+
+  $('#form-submit').on('click', function(e) {
+    e.preventDefault();
+    var jqxhr = $.ajax({
+      url: url,
+      method: "GET",
+      dataType: "json",
+      data: $form.serialize()
+    }).success(function(e){
+      alert("Message sent!");
+      $('input[type=text],input[type=email], textarea').val('');
+    });
+  })
 }(jQuery));

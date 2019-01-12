@@ -122,7 +122,7 @@
   .testimonial-item {
     padding: 0;
   }
-  .client-item-wrapper img {
+  .client-item-wrapper a img {
     width: 70%;
   }
   .slick-slider {

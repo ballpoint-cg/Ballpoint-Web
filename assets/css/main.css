@@ -358,7 +358,7 @@ hr {
   padding: 15px;
 }
 
-.client-item-wrapper img {
+.client-item-wrapper a img {
   opacity: 0.9;
   filter: grayscale(20%);
   -webkit-filter: grayscale(20%);
@@ -366,12 +366,14 @@ hr {
   transition: all .6s ease;
   -moz-transition: all .6s ease;
   -webkit-transition: all .6s ease;
+  border-bottom: 2px ridge #202020;
 }
 
-.client-item-wrapper:hover img {
+.client-item-wrapper:hover a img {
   opacity: 1;
   filter: grayscale(0%);
   -webkit-filter: grayscale(0%);
+  border-bottom: 2px ridge white;
 }
 
 #services{

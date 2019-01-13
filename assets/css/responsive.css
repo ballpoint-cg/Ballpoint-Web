@@ -21,7 +21,7 @@
 /* tablets */
 @media (max-width: 991px) {
   .section-title {
-    font-size: 30px;
+    /* font-size: 30px; */
     margin-bottom: 30px;
   }
   .services-item .services-content h3 a {
@@ -37,10 +37,10 @@
 
 /* only small tablets */
 @media (min-width: 768px) and (max-width: 991px) {
-  .section-title {
+  /* .section-title {
     font-size: 26px;
     margin-bottom: 30px;
-  }
+  } */
   .services-item .services-content h3 a {
     font-size: 16px;
   }
@@ -86,7 +86,7 @@
     padding: 50px 0;
   }
   .section-title {
-    font-size: 22px;
+    font-size: 30px;
     margin-bottom: 30px;
   }
   .title-hl {

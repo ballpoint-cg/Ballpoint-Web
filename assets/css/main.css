@@ -369,6 +369,7 @@ hr {
   -moz-transition: all .6s ease;
   -webkit-transition: all .6s ease;
   border-bottom: 2px solid #202020;
+  max-width: 70%;
 }
 
 .client-item-wrapper:hover a img {

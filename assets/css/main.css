@@ -169,6 +169,7 @@ button:focus {
   line-height: 34px;
   display: inline-block;
   text-align: center;
+  align-items: center;
   border-radius: 100%;
   font-size: 16px;
   margin: 15px 6px 12px 4px;
@@ -1298,7 +1299,7 @@ textarea {
   font-size: 20px;
 }
 .footer-area {
-  background: #404040;
+  background: #202020;
 }
 
 .footer-area .footer-titel {
@@ -1309,8 +1310,15 @@ textarea {
   letter-spacing: 0.5px;
 }
 
+.footer-area img {
+    max-width: 200px;
+    align-content: center;
+}
+
 .footer-area ul li {
   margin-bottom: 10px;
+  align-content: center;
+  align-items: center;
 }
 
 .footer-area ul li a {
@@ -1344,8 +1352,8 @@ textarea {
 }
 
 #copyright {
-  background: #404040;
-  border-top: 2px dotted #3b3d42;
+  background: #202020;
+  border-top: 1px #404040;
   padding: 10px;
 }
 

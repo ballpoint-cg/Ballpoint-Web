@@ -1,29 +1,11 @@
 <!DOCTYPE html>
-<html lang="en"> <!--TODO export this to a js file-->
+<html lang="en"> 
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123908964-2"></script>
-	<!-- Detect region from IP address and track if not from Europe -->
-	<script
-	 	src="https://code.jquery.com/jquery-3.3.1.min.js"
-	 	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-	 	crossorigin="anonymous"></script>
-	<script type="text/javascript">
-		$.getJSON('https://json.geoiplookup.io/api?callback=?', function(data) {
-			// console.log(JSON.stringify(data, null, 2));
-			$.getJSON('https://gpdr.geoiplookup.io/'+data.ip, function(d2){
-				// console.log(d2);
-				if(d2.gdpr !== "true"){
-					// console.log("tracking gtag");
-					window.dataLayer = window.dataLayer || [];
-					function gtag(){dataLayer.push(arguments);}
-					gtag('js', new Date());
-
-					gtag('config', 'UA-123908964-1');
-				}
-			});
-		});
-    </script>
+	
+	<script	src="./assets/js/jquery-min.js"></script>
+	<script type="text/javascript" src="./assets/js/gdpr.js"></script>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -42,14 +24,6 @@
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" >
     <!-- Icon -->
     <link rel="stylesheet" type="text/css" href="assets/fonts/line-icons.css">
-    <!-- Slicknav -->
-    <link rel="stylesheet" type="text/css" href="assets/css/slicknav.css">
-    <!-- Owl carousel -->
-    <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/owl.theme.css">
-    <!-- Slick Slider -->
-    <link rel="stylesheet" type="text/css" href="assets/css/slick.css" >
-    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css" >
     <!-- Animate -->
     <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
     <!-- Main Style -->
@@ -104,10 +78,6 @@
                 </a>
               </li>
             </ul>
-            <!-- <div class="btn-sing float-right">
-              <a class="btn btn-border" href="#feature">FAQ</a>
-            </div>
-          </div> -->
         </div>
 
         <!-- Mobile Menu Start -->
@@ -147,40 +117,11 @@
         <div class="container">
           <div class="foot container">
             <div class="row">
-              <!-- <div class=" col-lg-3 col-md-6 col-sm-12 col-xs-12 wow fadeInUp" data-wow-delay="0.2s"> -->
-              <!-- <div class="foot col-lg-12 col-md-12 col-sm-12 col-xs-12 wow fadeInUp" data-wow-delay="0.2s">   -->
-              <div class = "foot wow fadeInUp" data-wow-delay="0.2s">
+             <div class = "foot wow fadeInUp" data-wow-delay="0.2s">
                 <div class="footer-logo mb-3">
                   <img src="assets/img/banner_white.png" alt="Ballpoint CG">
                 </div>
                 <p>An Atlanta Company.</p>
-              <!--</div>
-               <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 wow fadeInUp" data-wow-delay="0.4s">
-                <h3 class="footer-titel">Company</h3>
-                <ul>
-                  <li><a href="#">Press Releases</a></li>
-                  <li><a href="#">Mission</a></li>
-                  <li><a href="#">Strategy</a></li>
-                </ul>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 wow fadeInUp" data-wow-delay="0.6s">
-                <h3 class="footer-titel">About</h3>
-                <ul>
-                  <li><a href="#">Career</a></li>
-                  <li><a href="#">Team</a></li>
-                  <li><a href="#">Clients</a></li>
-                </ul>
-              </div>-->
-  <!--
-              <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 wow fadeInUp" data-wow-delay="0.8s">
-                <h3 class="footer-titel">Find us on</h3>
-                <div class="social-icon">
-                    <a class="facebook" href="#"><i class="lni-facebook-filled"></i></a>
-                    <a class="twitter" href="#"><i class="lni-twitter-filled"></i></a>
-                    <a class="instagram" href="#"><i class="lni-instagram-filled"></i></a>
-                    <a class="linkedin" href="https://www.linkedin.com/company/ballpoint-consulting/"><i class="lni-linkedin-filled"></i></a>
-                </div>
-  -->
               </div> 
             </div> 
           </div>  

@@ -151,17 +151,17 @@
    return o;
 };
 
-  var $form = $('form#contactForm'),
-    url = 'https://script.google.com/macros/s/AKfycby56Uq4TiV_5dc9gcuR0HEcEKi03W55am3K3ecJc16JXcsdJ3sH/exec'
+const form = document.forms['contactForm'],
+ url = 'https://script.google.com/macros/s/AKfycby56Uq4TiV_5dc9gcuR0HEcEKi03W55am3K3ecJc16JXcsdJ3sH/exec'
 
-  $('#form-submit').on('click', function(e) {
-    e.preventDefault();
-    var jqxhr = $.ajax({
-      url: url,
-      method: "GET",
-      dataType: "json",
-      data: $form.serialize()
-    }).success(function(e){
+    form.addEventListener('submit', e => {
+			e.preventDefault()
+     fetch(url, { 
+       method: 'POST', 
+       mode: 'no-cors',
+       dataType: 'json',
+       body: new FormData(form)})
+     .then(response => {
       alert("Message sent!");
       $('input[type=text],input[type=email], textarea').val('');
     });

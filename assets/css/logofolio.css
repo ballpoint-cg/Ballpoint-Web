@@ -54,3 +54,9 @@
         padding-top: 120px;
     }
 }
+#copyright p {
+    line-height: 42px;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}

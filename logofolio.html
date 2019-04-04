@@ -33,87 +33,15 @@
     <!-- Responsive Style -->
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
     <link rel="stylesheet" type="text/css" href="assets/css/logofolio.css">
+
+    <script>
+        $(function(){
+          $('#nav_bar').load('nav_bar.html');
+        });
+    </script>
   </head>
   <body>
-    <!-- Header Area wrapper Starts TODO make this an imported html section https://medium.com/@AmyScript/how-to-reduce-reuse-and-recycle-your-code-389e6742e4ac--> 
-    <header id="header-wrap">
-      <!-- Navbar Start -->
-      <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
-        <div class="container container2">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-              <span class="icon-menu"></span>
-              <span class="icon-menu"></span>
-              <span class="icon-menu"></span>
-            </button>
-            <a href="index.html" class="navbar-brand"><img src="assets/img/logo2.png" alt=""></a>
-          </div>
-          <div class="collapse navbar-collapse" id="main-navbar">
-            <ul class="navbar-nav clearfix">
-              <li class="nav-item active">
-                <a class="nav-link" href="#hero-area">
-                  Home
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#services">
-                  Services
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#feature">
-                  Process
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#testimonial">
-                  Testimonials
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">
-                  Contact
-                </a>
-              </li>
-            </ul>
-        </div>
-
-        <!-- Mobile Menu Start -->
-        <ul class="mobile-menu navbar-nav">
-          <li>
-            <a class="page-scroll" href="#hero-area">
-              Home
-            </a>
-          </li>
-          <li>
-            <a class="page-scroll" href="#services">
-              Services
-            </a>
-          </li>
-          <li>
-            <a class="page-scroll" href="#feature">
-              Process
-            </a>
-          </li>
-          <li>
-            <a class="page-scroll" href="#testimonial">
-              Testimonial
-            </a>
-          </li>
-          <li>
-            <a class="page-scroll" href="#contact">
-              Contact
-            </a>
-          </li>
-        </ul>
-        <!-- Mobile Menu End -->
-
-      </nav>
-      <!-- Navbar End -->
-    </header>
+    <div id='nav_bar'></div>
     <section id="logos" class="section-padding top-padding">
         <div class="container">
             <div class="section-header ">
@@ -208,7 +136,6 @@
     <!-- End Preloader -->
     
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="assets/js/jquery-min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>

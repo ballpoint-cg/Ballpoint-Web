@@ -354,7 +354,7 @@ hr {
   -o-transition: all 0.4s ease-in-out;
 }
 #testimonial h2, h5 {
-  color: #dfe0e2;
+  color: #fff;
 }
 
 
@@ -382,6 +382,30 @@ hr {
   border-bottom: 2px solid #faf9e3;
 }
 
+#logofolio_button{
+  text-align: center;
+  margin-top: 20px;
+}
+#logofolio_button button{
+  border-radius: 50px;
+  background-color: transparent;
+
+  font-size: 16px;
+  border: 4px solid #137ED9;
+  padding: 10px 20px;
+  font-family: inherit;
+  line-height: 1.2;
+  font-weight: 700;
+  cursor: grab;
+}
+#logofolio_button button a{
+  color: #fff;
+}
+#logofolio_button button:hover{
+  background-color: #137ED9;
+
+  transition: all 0.4s ease 0s;
+}
 #services{
   background: #f8f9fb;
 }

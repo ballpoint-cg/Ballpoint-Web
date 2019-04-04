@@ -10,30 +10,36 @@
                 </button>
                 <a href="index.html" class="navbar-brand"><img src="assets/img/logo2.png" alt=""></a>
             </div>
-
+            <script>
+            $(function(){
+                if ( window.location.pathname != '/' || window.location.pathname.indexOf('index.html') ==-1){
+                    $('.home_link').attr('href','index.html');
+                }
+            });
+            </script>
             <!-- Desktop Menu Start -->
             <div class="collapse navbar-collapse" id="main-navbar">
                 <ul class="navbar-nav clearfix">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#hero-area">
+                <li class="nav-item">
+                    <a  class="nav-link home_link" href="#hero-area">
                         Home
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#services">
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="index.html#services">
                         Services
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#feature">
+                    <a class="nav-link" href="index.html#feature">
                         Process
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#testimonial">
+                    <a class="nav-link" href="index.html#testimonial">
                         Testimonials
                     </a>
-                </li>
+                </li> -->
                 <li class="nav-item">
                     <a class="nav-link" href="logofolio.html">
                         Logofolio
@@ -41,7 +47,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">
+                    <a class="nav-link" href="index.html#contact">
                         Contact
                     </a>
                 </li>
@@ -51,11 +57,11 @@
             <!-- Mobile Menu Start -->
             <ul class="mobile-menu navbar-nav">
                 <li>
-                    <a class="page-scroll" href="#hero-area">
+                    <a class="page-scroll home-link" href="#hero-area">
                         Home
                     </a>
                 </li>
-                <li>
+                <!-- <li>
                     <a class="page-scroll" href="#services">
                         Services
                     </a>
@@ -69,9 +75,9 @@
                     <a class="page-scroll" href="#testimonial">
                         Testimonial
                     </a>
-                </li>
+                </li> -->
                 <li>
-                    <a class="page-scroll" href="#testimonial">
+                    <a href="#testimonial">
                         Logofolio
                     </a>
                 </li>
